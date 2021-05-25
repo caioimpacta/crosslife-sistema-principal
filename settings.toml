@@ -1,0 +1,12 @@
+[default]
+TITLE = "Crosslife"
+SQLALCHEMY_DATABASE_URI = "sqlite:///academia.db"
+SQLALCHEMY_TRACK_MODIFICATIONS = "False"
+JWT_SECRET_KEY = "CERTESA"
+EXTENSIONS = [
+  "crosslife.extensions.database",
+  "crosslife.extensions.seralize",
+  "crosslife.extensions.manegerJWT",
+  "crosslife.blueprint.resources"
+]
+
